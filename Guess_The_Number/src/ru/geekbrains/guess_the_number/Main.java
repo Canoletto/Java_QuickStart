@@ -7,7 +7,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ваша задача - угадать число.");
-        int range = 10;
+        System.out.println("Введите максимальное число диапазона:");
+        int range = scanner.nextInt();
         int number = (int)(Math.random()*range);
         while(true){
             System.out.println("Ушадайте число от 0 до" + range);
